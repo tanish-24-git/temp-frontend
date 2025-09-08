@@ -69,21 +69,9 @@ export default function HomePage() {
                 <Workflow className="mr-2 h-4 w-4" />
                 Workflows
               </Button>
-              <Button
-                variant={currentPage === "docs" ? "default" : "ghost"}
-                onClick={() => setCurrentPage("docs")}
-                className="text-sm"
-              >
-                <BookOpen className="mr-2 h-4 w-4" />
-                Documentation
-              </Button>
             </nav>
 
             <div className="flex items-center space-x-4">
-              <Button variant="outline" size="sm">
-                <Github className="mr-2 h-4 w-4" />
-                GitHub
-              </Button>
               <Button onClick={() => setCurrentPage("training")}>
                 Get Started
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -237,14 +225,6 @@ export default function HomePage() {
                 >
                   Start Your First Model
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="text-lg px-8 py-6 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 bg-transparent"
-                >
-                  <BookOpen className="mr-2 h-5 w-5" />
-                  View Documentation
                 </Button>
               </div>
             </CardContent>
